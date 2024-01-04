@@ -1,4 +1,4 @@
-import './App.css';
+
 import { useEffect, useState } from 'react';
 import Board from './components/Board/Board';
 const emojiList = [...'💣🧤🎩🌮🎱🌶🍕🦖'];
@@ -58,6 +58,10 @@ const App = () => {
       <h1 className='text'>Memo Juegos</h1>
       <h2>🦖 Abdiel 🦖 </h2>
         <Board memoBlocks={shuffledMemoBlocks} animating={animating}  handleMemoClick={handleMemoClick} />
+        <div>
+            <button>reiniciar juego</button>
+        </div>
+      
     </div>
   
   );

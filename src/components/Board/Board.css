@@ -23,3 +23,15 @@ h2{
     margin-top: 30px;
     text-align: center;
 }
+
+div{
+text-align: center;
+}
+
+button{
+    background-color: #055FD8;
+    padding: 8px;
+    border-radius: 10px;
+    border: transparent;
+    color: #fff;
+}
