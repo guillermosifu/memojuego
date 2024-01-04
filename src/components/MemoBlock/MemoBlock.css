@@ -37,5 +37,8 @@
 }
 
 .memo-block-front {
-    background-color: #055FD8;
+    /* background-color: #055FD8; */
+    background: url("https://www.shutterstock.com/image-vector/cartoon-dinosaur-on-white-background-600nw-2251203449.jpg");
+    background-size: cover;
+    
 }
