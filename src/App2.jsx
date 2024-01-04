@@ -30,14 +30,14 @@ const App2 = () => {
 
     if (allFlipped) {
         confetti()
-        // Swal.fire({
-        //     title: "Ganaste!",
-        //     text: "felicidades.",
-        //     imageUrl: "https://img.freepik.com/vector-premium/genial-dinosaurio-tocando-guitarra_145832-289.jpg",
-        //     imageWidth: 400,
-        //     imageHeight: 250,
+        Swal.fire({
+            title: "Ganaste!",
+            text: "felicidades.",
+            imageUrl: "https://img.freepik.com/vector-premium/genial-dinosaurio-tocando-guitarra_145832-289.jpg",
+            imageWidth: 400,
+            imageHeight: 250,
        
-        //   });
+          });
           
       // Puedes reiniciar el juego aquí si lo deseas
     }
