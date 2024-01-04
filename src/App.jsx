@@ -13,6 +13,8 @@ const App = () => {
     setShuffledMemoBlocks(shuffledEmojiList.map( (emoji, i) => ({ index: i, emoji, flipped: false}) ));
   }, []);
 
+ 
+
   const shuffleArray = a => {
     for (let i = a.length - 1; i > 0; i--) {
         const j = Math.floor(Math.random() * (i + 1));
@@ -20,6 +22,15 @@ const App = () => {
     }
     return a;
   }
+
+  useEffect(() => {
+    const allFlipped = shuffledMemoBlocks.every(block => block.flipped);
+
+    if (allFlipped) {
+      alert('¡Ganaste!');
+      // Puedes reiniciar el juego aquí si lo deseas
+    }
+  }, [shuffledMemoBlocks]);
 
   const handleMemoClick = memoBlock => {
     const flippedMemoBlock = { ...memoBlock, flipped: true };
