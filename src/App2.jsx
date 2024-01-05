@@ -3,7 +3,8 @@ import Board from './components/Board/Board';
 import Swal from 'sweetalert2';
 import confetti from 'canvas-confetti';
 
-const emojiList = [...'💣🧤🎩🌮🎱🌶🍕🦖'];
+// const emojiList = [...'💣🧤🎩🌮🎱🌶🍕🦖'];
+const emojiList = [...'🦕🐒🐉🐭🐶🦝🐮🦖'];
 
 const App2 = () => {
   const [shuffledMemoBlocks, setShuffledMemoBlocks] = useState([]);
